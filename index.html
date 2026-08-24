@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="style.css" rel="stylesheet">
+
+<title>TypeMaster - Typing Practice</title>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⌨️ TypeMaster</div>
+
+    <nav>
+        <a onclick="goHome()">Home</a>
+        <a onclick="goPractice()">Practice</a>
+        <a onclick="goKeyboard()">Keyboard</a>
+        <a onclick="goTips()">Tips</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<div class="hero" id="home">
+    <h1>Learn Touch Typing 🚀</h1>
+    <p>Improve your typing speed, accuracy and keyboard skills.</p>
+    <button class="btn" onclick="goPractice()">Start Typing</button>
+</div>
+
+<!-- Features -->
+<section>
+    <div class="title">
+        <h2>Why Learn Typing?</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div style="font-size:40px;">⚡</div>
+            <h3>Typing Speed</h3>
+            <p>Increase your words per minute and type faster.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:40px;">🎯</div>
+            <h3>Accuracy</h3>
+            <p>Practice regularly to reduce typing mistakes.</p>
+        </div>
+
+        <div class="card">
+            <div style="font-size:40px;">💻</div>
+            <h3>Keyboard Skills</h3>
+            <p>Learn proper finger positions and keyboard control.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Practice -->
+<section id="practice">
+
+ <div class="container">
+        <p class="subtitle">Practice your typing skills with real quotes - No login required!</p>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-value" id="wpm">0</span>
+                    <span class="stat-label">WPM</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="accuracy">0%</span>
+                <span class="stat-label">Accuracy</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="errors">0</span>
+                <span class="stat-label">Errors</span>
+            </div>
+        </div>
+
+        <div class="difficulty-selector">
+            <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+
+        <div class="typing-area">
+            <div class="quote-display" id="quote-display"></div>
+            <div class="input-area">
+                <input type="text" id="typing-input" placeholder="Start typing the quote above..." autocomplete="off"
+                    autocapitalize="off" autocorrect="off">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" id="new-quote">New Quote</button>
+            <button class="btn btn-secondary" id="restart">Restart</button>
+        </div>
+    </div>
+
+</section>
+
+<!-- Keyboard -->
+<section id="keyboard">
+
+    <div class="title">
+        <h2>Keyboard Guide</h2>
+        <p>Learn the basic keyboard layout.</p>
+    </div>
+
+    <div class="keyboard">
+
+        <div class="key-row">
+            <div class="key">Q</div>
+            <div class="key">W</div>
+            <div class="key">E</div>
+            <div class="key">R</div>
+            <div class="key">T</div>
+            <div class="key">Y</div>
+            <div class="key">U</div>
+            <div class="key">I</div>
+            <div class="key">O</div>
+            <div class="key">P</div>
+        </div>
+
+        <div class="key-row">
+            <div class="key">A</div>
+            <div class="key">S</div>
+            <div class="key">D</div>
+            <div class="key">F</div>
+            <div class="key">G</div>
+            <div class="key">H</div>
+            <div class="key">J</div>
+            <div class="key">K</div>
+            <div class="key">L</div>
+        </div>
+
+        <div class="key-row">
+            <div class="key">Z</div>
+            <div class="key">X</div>
+            <div class="key">C</div>
+            <div class="key">V</div>
+            <div class="key">B</div>
+            <div class="key">N</div>
+            <div class="key">M</div>
+        </div>
+
+        <div class="key-row">
+            <div class="key space">SPACE</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Tips -->
+<section id="tips">
+
+    <div class="title">
+        <h2>Typing Tips</h2>
+    </div>
+
+    <div class="tips">
+
+        <ul>
+            <li>Keep your fingers on the home row.</li>
+            <li>Use both hands while typing.</li>
+            <li>Look at the screen instead of the keyboard.</li>
+            <li>Start slowly and focus on accuracy.</li>
+            <li>Practice for 15–20 minutes every day.</li>
+            <li>Try to keep your hands relaxed.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TypeMaster | Learn Typing Better</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
